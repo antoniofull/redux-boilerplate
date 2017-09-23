@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { updateText } from './actions';
 
+import './css/index.scss';
 import Hello from './components/Hello';
 
 class App extends Component {
