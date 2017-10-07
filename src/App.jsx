@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { updateText } from './actions';
 
 import './css/index.scss';
+
 import Hello from './components/Hello';
 
 class App extends Component {
@@ -18,7 +19,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="main">
         <Hello update={this.update} />
         <h1>{this.props.text}</h1>
       </div>

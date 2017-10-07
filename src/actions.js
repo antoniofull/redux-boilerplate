@@ -6,5 +6,5 @@ export const updateText = val => ({
 });
 
 export const otherAction = () => ({
-  type: CST.UPDATE_TEXT,
+  type: 'OTHER_ACTION',
 });

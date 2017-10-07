@@ -1,10 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Hello = props => <input onKeyUp={props.update} type="text" defaultValue={props.text} />;
+const Hello = props => (
+  <input className="input" onKeyUp={props.update} type="text" defaultValue={props.text} />
+);
 
 Hello.defaultProps = {
   text: '',
+  update: () => {},
 };
 
 Hello.propTypes = {
